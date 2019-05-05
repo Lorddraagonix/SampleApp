@@ -7,11 +7,9 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       post users_path, params: { user: { name:  "", email: "user@invalid", password:  "foo", password_confirmation: "bar" } }
     end
     assert_template 'users/new'
-# debugger
-    # binding.pry
     assert_select 'div#error_explanation'
     assert_select 'div.field_with_errors'
-  end
+    end
 
 
   test "valid signup information" do
@@ -24,4 +22,4 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_template 'users/show'
     assert_not flash.empty?
     end
-  end
+end
