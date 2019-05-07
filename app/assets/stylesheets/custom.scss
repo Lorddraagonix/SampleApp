@@ -158,6 +158,8 @@ $gray-medium-light: #eaeaea;
 
 
 
+
+
 /* sidebar */
 
 aside {
@@ -185,6 +187,9 @@ aside {
     }
   }
 }
+
+
+
 
 
 
@@ -218,6 +223,9 @@ input {
     color: $state-danger-text;
   }
 }
+
+
+
 
 /* sidebar */
 
@@ -256,7 +264,12 @@ aside {
   margin-top: 15px;
 }
 
- /* Forms */
+
+
+
+
+
+  /* forms */
 
  input, textarea, select, .uneditable-input {
    border: 1px solid #bbb;
@@ -282,4 +295,18 @@ input {
    .form-control {
      colot: $state-danger-text;
    }
+ }
+
+ .checkbox {
+   margin-top: -10px;
+   margin-bottom: 10px;
+   span {
+     margin-left: 20px;
+     font-weight: normal;
+   }
+ }
+
+ #session_remember_me {
+   width: auto;
+   margin-left: 0;
  }
